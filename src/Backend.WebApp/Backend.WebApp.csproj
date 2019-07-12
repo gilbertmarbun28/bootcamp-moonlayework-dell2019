@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Barebone\Barebone.csproj" />
+    <ProjectReference Include="..\Checkin\Checkins.csproj" />
     <ProjectReference Include="..\Employees.Data.EntityFramework.SqlServer\Employees.Data.EntityFramework.SqlServer.csproj" />
     <ProjectReference Include="..\Employees\Employees.csproj" />
   </ItemGroup>
