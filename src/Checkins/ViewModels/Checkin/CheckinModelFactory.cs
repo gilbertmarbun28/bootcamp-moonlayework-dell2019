@@ -2,6 +2,7 @@
 using ExtCore.Data.Abstractions;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Checkins.ViewModels.Checkin
@@ -17,7 +18,7 @@ namespace Checkins.ViewModels.Checkin
         {
             var checkinRepo = storage.GetRepository<ICheckinRepository>();
 
-            return new ChkIndexViewModel(checkinRepo.All(page, size));
+            return new ChkIndexViewModel(checkinRepo.All(page, size).Select(o=> new CheckinDto(o)));
         }
     }
 }

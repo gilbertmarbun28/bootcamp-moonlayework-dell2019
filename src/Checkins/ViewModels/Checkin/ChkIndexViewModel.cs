@@ -6,11 +6,11 @@ namespace Checkins.ViewModels.Checkin
 {
     public class ChkIndexViewModel
     {
-        public ChkIndexViewModel(IEnumerable<Data.Entities.Checkin> data)
+        public ChkIndexViewModel(IEnumerable<CheckinDto> data)
         {
-            Checkins = data ?? new List<Data.Entities.Checkin>();
+            Checkins = data ?? new List<CheckinDto>();
         }
 
-        public IEnumerable<Data.Entities.Checkin> Checkins { get; }
+        public IEnumerable<CheckinDto> Checkins { get; }
     }
 }
