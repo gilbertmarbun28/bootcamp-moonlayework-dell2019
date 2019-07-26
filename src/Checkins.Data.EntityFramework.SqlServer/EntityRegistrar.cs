@@ -16,7 +16,7 @@ namespace Checkins.Data.EntityFramework.SqlServer
                 etb.HasKey(c => c.Id);
                 etb.Property(c => c.Id).ValueGeneratedOnAdd();
 
-                etb.Property(p => p.Location).HasMaxLength(225).IsRequired();
+                etb.Property(p => p.Location).HasMaxLength(225);
                 //etb.Property(p => p.Remark).HasMaxLength(100).IsRequired();
 
 
