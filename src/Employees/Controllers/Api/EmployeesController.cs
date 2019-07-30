@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace Employees.Controllers.Api
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/employees")]
     public class EmployeesController : ControllerBaseApi
     {
