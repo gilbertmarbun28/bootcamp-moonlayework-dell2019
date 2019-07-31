@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Checkins.ViewModels.Checkin
 {
-    public class ChkIndexViewModel
+    public class CheckinIndexViewModel
     {
-        public ChkIndexViewModel(IEnumerable<CheckinDto> data)
+        public CheckinIndexViewModel(IEnumerable<CheckinDto> data)
         {
             Checkins = data ?? new List<CheckinDto>();
         }

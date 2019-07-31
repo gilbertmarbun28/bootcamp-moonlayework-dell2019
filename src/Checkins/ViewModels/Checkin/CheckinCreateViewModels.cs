@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Checkins.ViewModels.Checkin
 {
-    public class CreateViewModels
+    public class CheckinCreateViewModels
     {
         //[Required()]
         //public DateTimeOffset Time { get; set; }

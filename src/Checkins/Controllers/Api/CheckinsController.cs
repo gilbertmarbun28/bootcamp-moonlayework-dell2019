@@ -55,7 +55,7 @@ namespace Checkins.Controllers.Api
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(CreateViewModels viewModel)
+        public async Task<IActionResult> Post(CheckinCreateViewModels viewModel)
         {
             if (this.ModelState.IsValid)
             {
